@@ -1,3 +1,8 @@
+@if (session ('message'))
+<div class="alert alert-success">
+    {{session ('message')}}
+</div>
+@endif
 <x-layout>
     <div class="container-fluid p-5 text-center">
         <div class="row justify-content-center">

@@ -23,6 +23,7 @@
             <form action="{{route('logout')}}" method="POST" id="form-logout" class="d-none">
               @csrf
             </form>
+             <li><a class="dropdown-item" href="{{route('article.create')}}">Inserisci articolo</a></li>
           </ul>
         </li>
         @endauth
