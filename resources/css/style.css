@@ -1,0 +1,71 @@
+/* Font Family */
+
+
+*{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+h1,h2,h3{
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* Palette colori */
+:root{
+    --main:rgb(228, 54, 54);
+    --secondaryC:rgb(226, 221, 180);
+    --whiteC:rgb(246, 239, 210);
+    --blackC: rgb(0, 0, 0);
+}
+/* testi palette */
+.text-main{
+    color: var(--main);
+}
+.text-secondaryC{
+    color: var(--secondaryC);
+}
+.text-whiteC{
+    color: var(--whiteC);
+}
+.text-blackC{
+    color: var(--blackC);
+}
+/* background palette */
+.bg-main{
+    background-color: var(--main);
+}
+.bg-secondaryC{
+    background-color: var(--secondaryC);
+}
+.bg-whiteC{
+    background-color: var(--whiteC);
+}
+.bg-blackC{
+    background-color: var(--blackC);
+}
+
+/* navbar */
+.btnC{
+    border: 3px solid var(--whiteC);
+    border-radius: 20%;
+    background-color: var(--secondaryC);
+    height: 40px;
+    width: 45px;
+    transition: 0.1;
+}
+.btnC:hover{
+    background-color: var(--whiteC);
+}
+/* hero section */
+.heroImg{
+    height: 180px;
+    border: 4px solid var(--secondaryC);
+    border-radius: 20%;
+    background-color: var(--whiteC);
+}
