@@ -10,7 +10,7 @@
           <a class="nav-link text-blackC" aria-current="page" href="{{route('homepage')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-blackC" href="#">Link</a>
+          <a class="nav-link text-blackC" href="{{route('article.index')}}">Articoli</a>
         </li>
         {{-- sezione per utente loggato --}}
         @auth

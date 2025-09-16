@@ -19,7 +19,7 @@ return new class extends Migration
         });
 
 
-        $categories=['politica','sport', 'cultura', 'gossip','tech', 'eventi', 'food&drink', 'economia'];
+        $categories=['Politica','Sport', 'Cultura', 'Gossip','Tech', 'Eventi', 'Food&Drink', 'Economia'];
 
         foreach($categories as $category){
             Category::create([
