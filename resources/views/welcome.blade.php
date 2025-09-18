@@ -15,26 +15,26 @@
     {{-- sezione articoli recenti --}}
     <div class="container my-5">
         <div class="row justify-content-evenly">
-            <div class="col-6">
+            <div class="col-12">
                 <h2 class="display-6 text-blackC text-start">Le ultime notizie:</h2>
             </div>
-            <div class="col-6">
+            {{-- <div class="col-6">
                 <img class="heroImg mb-3" src="media/vintage.png" alt="Illustrazione di una macchina da scrivere">
-            </div>
+            </div> --}}
             {{-- card articoli --}}
      @foreach ($articles as $article)
             <div class="col-12 col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{Storage::url($article->image)}}" class="card-img-top" alt="Immagine articolo {{$article->name}}">
+                <div class="card cardC" style="width: 18rem;">
+                    <img src="{{Storage::url($article->image)}}" class="imgCard" alt="Immagine articolo {{$article->name}}">
                     <div class="card-body">
                       <h5 class="card-title">{{$article->title}}</h5>
                       <p class="card-subtitle">{{$article->subtitle}}</p>
-                      <p class="small text-muted">Categoria: <a href= "{{route('article.byCategory', $article->category->name)}}" class="text-capitalize text-muted">{{$article->category->name}}</a></p>
+                      <p class="small text-muted">Categoria:<a href= "{{route('article.byCategory', $article->category->name)}}" class="text-capitalize text-main text-decoration-none">{{$article->category->name}}</a></p>
                     </div>
-                    <div class="card-footer d-flex justify-content-between align-items-center">
+                    <div class="card-footer bg-secondaryC d-flex justify-content-between align-items-center">
                         <p>Scritto il {{$article->created_at->format('d/m/Y')}} <br>
-                        da <a href="{{route('article.byUser', $article->user)}}">{{$article->user->name}}</a></p>
-                      <a href="{{route('article.show', $article)}}" class="btn btn-primary">Articolo completo</a>
+                        da <a class="text-main text-decoration-none" href="{{route('article.byUser', $article->user)}}">{{$article->user->name}}</a></p>
+                      <a href="{{route('article.show', $article)}}" class="btnCard text-blackC text-decoration-none">Leggi<i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

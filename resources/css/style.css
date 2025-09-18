@@ -103,3 +103,21 @@ h1,h2,h3{
       z-index: 2; 
       padding: 20px; 
     }
+
+    /* card articoli */
+
+    .cardC{
+        border: 2px solid var(--blackC);
+    }
+
+   .imgCard{
+    height: 200px;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    object-fit: cover;
+   }
+
+   .btnCard{
+    border: 2px solid var(--blackC);
+    background-color: var(--main);
+   }
