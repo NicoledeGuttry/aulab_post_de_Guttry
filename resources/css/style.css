@@ -53,10 +53,11 @@ h1,h2,h3{
 /* navbar */
 .btnC{
     border: 3px solid var(--whiteC);
-    border-radius: 20%;
+    border-radius: 5px;
     background-color: var(--secondaryC);
     height: 40px;
-    width: 45px;
+    padding: 6px 12px;
+    width: fit-content;
     transition: 0.1;
 }
 .btnC:hover{
@@ -112,12 +113,21 @@ h1,h2,h3{
 
    .imgCard{
     height: 200px;
-    border-top-left-radius: 2%;
-    border-top-right-radius: 2%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
     object-fit: cover;
    }
 
    .btnCard{
-    border: 2px solid var(--blackC);
+    border-color: var(--main);
     background-color: var(--main);
+    padding: 8px 12px;
+    width: fit-content;
+    border-radius: 5px;
    }
+   /* footer -lavora con noi */
+   .workLink{
+    border: 2px solid var(--main);
+   }
+
+   

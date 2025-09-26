@@ -1,8 +1,8 @@
 <x-layout>
-    <div class="container-fluid p-5 text-center">
+    <div class="container-fluid p-5 text-center mt-5">
         <div class="row justify-content-center">
             <div class="col-12">
-                <h1 class="display-1">Inserisci un articolo</h1>
+                <h1 class="display-1 text-main">Inserisci un articolo</h1>
             </div>
         </div>
     </div>
@@ -10,7 +10,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
                 {{-- Form creazione --}}
-                <form action="{{route('article.store')}}" method="POST" class="card p-5 shadow" enctype="multipart/form-data">
+                <form action="{{route('article.store')}}" method="POST" class="card p-5 shadow bg-whiteC" enctype="multipart/form-data">
                   @csrf
                     {{-- titolo --}}
                     <div class="mb-3">
@@ -59,8 +59,8 @@
                             </div>
                             {{-- bottone --}}
                               <div class="mt-3 d-flex justify-content-center flex-column align-items-center">
-                                <button type="submit" class="btn btn-outline-secondary">Inserisci</button>
-                                <a href="{{route('homepage')}}" class="mt-2">Torna alla homepage</a>
+                                <button type="submit" class="btnC">Inserisci</button>
+                                <a class="text-decoration-none text-main" href="{{route('homepage')}}" class="mt-2">Torna alla homepage</a>
                               </div>
                 
                             </form>

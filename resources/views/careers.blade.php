@@ -1,15 +1,15 @@
 <x-layout>
     <div class="container-fluid p-5 text-center">
         <div class="row justify-content-center">
-            <div class="col-12">
-                <h1 class="display-1">Lavora con noi</h1>
+            <div class="col-12 mt-5">
+                <h1 class="display-1 text-main">Lavora con noi</h1>
             </div>
         </div>
     </div>
     <div class="container my-5">
         <div class="row">
             <div class="col-12 col-md-6">
-                <form action="{{route('careers.submit')}}" method="POST" class="card p-5 shadow">
+                <form action="{{route('careers.submit')}}" method="POST" class="card p-5 shadow bg-whiteC">
                     @csrf
                     <div class="mb-3">
                         <label for="role" class="form-label">Quale posizione ti interessa?</label>
@@ -43,16 +43,16 @@
                         @enderror
                     </div>
                     <div class="mt-3 d-flex justify-content-center">
-                        <button type="submit" class="btn btn-outline-secondary">Invio</button>
+                        <button type="submit" class="btnC">Invio</button>
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-md-6 p-5">
-                <h2>Lavora come Amministratore</h2>
+            <div class="col-12 col-md-6 p-5 card shadow text-center d-flex justify-content-between bg-blackC text-whiteC">
+                <h2>Lavora come Amministratore:</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, incidunt?</p>
-                <h2>Lavora come Revisore</h2>
+                <h2>Lavora come Revisore:</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, culpa!</p>
-                <h2>Lavora come Redattore</h2>
+                <h2>Lavora come Redattore:</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, explicabo!</p>
             </div>
         </div>

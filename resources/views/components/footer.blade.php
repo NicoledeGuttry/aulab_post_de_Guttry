@@ -11,8 +11,8 @@
        {{-- Lavora con noi --}}
         <div class="row d-flex justify-content-center">
           <div class="col-md-5 col-12">
-            <div class="form-outline mb-4">
-             <a href="{{route('careers')}}">Lavora con noi</a>
+            <div class="card shadow workLink mb-4 mt-5">
+              <a class="text-decoration-none text-main display-6" href="{{route('careers')}}">Lavora con noi</a>
             </div>
           </div>
         </div>
