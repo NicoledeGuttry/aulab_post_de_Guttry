@@ -21,6 +21,9 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item text-main" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a></li>
             <form action="{{route('logout')}}" method="POST" id="form-logout" class="d-none">
+              @if (Auth::user()->is_admin)
+              <li><a class="dropdown-item" href="{{route('admin.dashboard')}}">Dashboard Admin</a></li>
+              @endif
               @csrf
             </form>
              <li><a class="dropdown-item text-blackC" href="{{route('article.create')}}">Inserisci articolo</a></li>
